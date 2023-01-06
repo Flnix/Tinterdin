@@ -1,5 +1,5 @@
 # Tinterdin
-# A Currently developing AI Simplar to Jarvis (In IronMan) 
+# A Currently developing AI Similar to Jarvis (In IronMan) 
 - Greet user
 - Tell current time and date
 - Launch applications/softwares 
