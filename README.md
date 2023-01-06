@@ -1,6 +1,5 @@
 # Tinterdin
 # A Currently developing AI Simplar to Jarvis (In IronMan)
-# Currently Developing Tinterdin to perform Hacking Stuffs.
 - Greet user
 - Tell current time and date
 - Launch applications/softwares 
@@ -24,6 +23,8 @@
 - Can take screenshot and save it with custom filename
 - Can hide all files in a folder and also make them visible again
 - Has a cool Graphical User Interface
+- Currently Developing Tinterdin to perform Hacking Stuffs.
+
 
 ## API Keys
 To run this program you will require a bunch of API keys. Register your API key by clicking the following links
