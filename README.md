@@ -1,5 +1,6 @@
 # Tinterdin
-# A Currently developing AI Simplar to Jarvis (In IronMan) 
+# A Currently developing AI Simplar to Jarvis (In IronMan)
+# Currently Developing Tinterdin to perform Hacking Stuffs.
 - Greet user
 - Tell current time and date
 - Launch applications/softwares 
