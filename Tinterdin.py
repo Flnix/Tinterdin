@@ -94,8 +94,7 @@ def MainExe():
                     pywhatkit.playonyt(video)
 
                 elif "help help" in Data:
-                    send_sos(phone_number="+918667239680")
-                    send_sos(phone_number="+919677476559")
+                    send_sos(phone_number="your sos number")
                     Speak(rescue())
 
                 elif "email" in Data or "send email" in Data or "compose a mail" in Data:
