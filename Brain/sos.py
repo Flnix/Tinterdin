@@ -2,8 +2,8 @@ from twilio.rest import Client
 import geocoder
 
 def send_sos(phone_number):
-    account_sid = "AC593f4bf7c0e2c2c0e22afee18cad033e"
-    auth_token = "0b6978517d0ecd40a0d3b2b978403885"
+    account_sid = "your id"
+    auth_token = "your key"
     client = Client(account_sid, auth_token)
 
     # Get current location
