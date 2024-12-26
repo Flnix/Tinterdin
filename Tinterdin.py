@@ -10,7 +10,6 @@ import sys
 import urllib.parse  
 import pyjokes
 import time
-import pywhatkit
 
 from Brain.chat import Reply
 from Body.Listen import Listen
@@ -21,8 +20,6 @@ from Brain.predefinedcmts import GREETINGS, GREETINGS_RES, EMAIL_DIC, CALENDAR_S
 from Brain.date_time import Date
 from Brain.date_time import Time
 from Brain.launch_app import launch_app
-from Brain.sos import send_sos
-from Brain.sos import rescue
 from Brain.website_open import website_opener
 from Brain.weather import fetch_weather
 from Brain.wikipedia import tell_me_about
@@ -87,14 +84,14 @@ def MainExe():
                     Speak(f'Alright sir, Opening {domain}')
                     print(open_result)
                     
-                elif 'youtube' in Data:
+                    '''elif 'youtube' in Data:
                     video = Data.split(' ')[1]
                     Speak(f"Okay sir, playing {video} on youtube")
-                    pywhatkit.playonyt(video)
+                    pywhatkit.playonyt(video)'''
 
-                elif "help help" in Data:
+                    '''elif "help help" in Data:
                     send_sos(phone_number="your sos number")
-                    Speak(rescue())
+                    Speak(rescue())'''
 
                 elif "email" in Data or "send email" in Data or "compose a mail" in Data:
                     sender_email = email
@@ -182,7 +179,7 @@ def MainExe():
                     pyautogui.keyDown("alt")
                     pyautogui.press("tab")
                     time.sleep(1)
-                    pyautogui.keyUp("alt")'''
+                    pyautogui.keyUp("alt")'''   
                     
                 elif "ip address" in Data:
                     ip = requests.get('https://api.ipify.org').text
