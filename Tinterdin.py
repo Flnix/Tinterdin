@@ -10,7 +10,6 @@ import sys
 import urllib.parse  
 import pyjokes
 import time
-import pyautogui
 import pywhatkit
 
 from Brain.chat import Reply
@@ -149,14 +148,14 @@ def MainExe():
                     else:
                         Speak("Sorry sir. I couldn't load your query from my database. Please try again")
                             
-                elif "take screenshot" in Data or "take a screenshot" in Data or "capture the screen" in Data:
+                    '''elif "take screenshot" in Data or "take a screenshot" in Data or "capture the screen" in Data:
                     Speak("By what name do you want to save the screenshot?")
                     name = Listen()
                     Speak("Alright sir, taking the screenshot")
                     img = pyautogui.screenshot()
                     name = f"{name}.png"
                     img.save(name)
-                    Speak("The screenshot has been succesfully captured")
+                    Speak("The screenshot has been succesfully captured")'''
                     
                     
                 elif "joke" in Data:
@@ -178,12 +177,12 @@ def MainExe():
                     except Exception as e:
                         Speak("Sorry sir, I coundn't fetch your current location. Please try again")
                         
-                elif "switch the window" in Data or "switch window" in Data:
+                    '''elif "switch the window" in Data or "switch window" in Data:
                     Speak("Okay sir, Switching the window")
                     pyautogui.keyDown("alt")
                     pyautogui.press("tab")
                     time.sleep(1)
-                    pyautogui.keyUp("alt")
+                    pyautogui.keyUp("alt")'''
                     
                 elif "ip address" in Data:
                     ip = requests.get('https://api.ipify.org').text
